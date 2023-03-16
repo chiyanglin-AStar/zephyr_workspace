@@ -28,12 +28,22 @@ cd zephyr-sdk-0.15.2
 
 cd zephyrproject/zephyr/
 
+west build -p always -b  arduino_due samples/basic/blinky
 
 west build -p always -b ast1030_evb  samples/hello_world
 
 west build -p always -b ast1030_evb  samples/basic/minimal/
 
 west build -p always -b qemu_x86_64  samples/basic/minimal/
+
+## qemu m3 
+west build -b qemu_cortex_m3 samples/synchronization
+west build -t run
+
+## qemu x86 
+export OVMF_FD_PATH=/usr/share/edk2.git/ovmf-x64/OVMF_CODE-pure-efi.fd
+west build -b qemu_x86_64 -p auto samples/hello_world/ -DCONF_FILE=prj_uefi.conf
+west build -t run
 
 ## Board List
 arc:

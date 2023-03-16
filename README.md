@@ -2,14 +2,17 @@
 
 sudo bash kitware-archive.sh
 
-west init .
+west init ./zephyrproject
+
+cd ./zephyrproject
 
 west update
 
 west zephyr-export
 
-pip3 install -r ./scripts/requirements.txt
+pip3 install -r ./zephyr/scripts/requirements.txt
 
+cd ..
 
 ## download SDK
 
@@ -22,3 +25,5 @@ tar xvf zephyr-sdk-0.15.2_linux-x86_64.tar.gz
 cd zephyr-sdk-0.15.2
 
 ./setup.sh
+
+cd zephyrproject/zephyr/

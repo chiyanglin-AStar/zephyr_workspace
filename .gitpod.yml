@@ -1,0 +1,19 @@
+# CodingCoffee  C/C++ GitPod Examples more courses : http://www.codingcoffee.org
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - init: echo 'this is zyphyr build image build example' # runs during prebuild
+    command: echo 'zyphyr build tutorial' && sudo apt update &&  sudo apt-get -y install git cmake ninja-build gperf ccache dfu-util device-tree-compiler wget python3-dev python3-pip python3-setuptools python3-tk python3-wheel xz-utils file make gcc gcc-multilib g++-multilib libsdl2-dev libmagic1 && pip3 install --user -U west
+
+
+# CodingCoffee  C/C++ GitPod Examples more courses : http://www.codingcoffee.org
+ports:
+  - port: 3000
+    onOpen: open-preview
+  - port: 6080
+    onOpen: open-preview
+  - port: 5900
+    onOpen: ignore
+  - port: 35900
+    onOpen: ignore

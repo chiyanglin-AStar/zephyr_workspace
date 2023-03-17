@@ -32,6 +32,13 @@ west build -p always -b  arduino_due samples/basic/blinky
 
 west build -p always -b ast1030_evb  samples/hello_world
 
+## use qemu to run ast1030 image
+
+qemu-system-arm -M ast1030-evb -nographic -kernel zephyr.elf
+
+wget https://jenkins.openbmc.org/job/latest-qemu-x86/lastSuccessfulBuild/artifact/qemu/build/qemu-system-arm
+
+
 west build -p always -b ast1030_evb  samples/basic/minimal/
 
 west build -p always -b qemu_x86_64  samples/basic/minimal/

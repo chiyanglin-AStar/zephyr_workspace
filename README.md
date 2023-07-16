@@ -53,157 +53,170 @@ west build -b qemu_x86_64 -p auto samples/hello_world/ -DCONF_FILE=prj_uefi.conf
 west build -t run
 
 ## Board List
-arc:
-  em_starterkit
-  em_starterkit_em11d
-  em_starterkit_em7d
-  em_starterkit_em7d_v22
-  emsdp
-  emsdp_em4
+### arc:
+
+  em_starterkit  
+  em_starterkit_em11d  
+  em_starterkit_em7d  
+  em_starterkit_em7d_v22  
+  emsdp  
+  emsdp_em4  
   emsdp_em5d
-  emsdp_em6
-  emsdp_em7d
-  emsdp_em7d_esp
+  emsdp_em6  
+  emsdp_em7d  
+  emsdp_em7d_esp  
   emsdp_em9d
-  hsdk
+  
+  hsdk  
   hsdk_2cores
+  
   iotdk
-  nsim_em
-  nsim_em11d
-  nsim_em7d_v22
-  nsim_hs
-  nsim_hs5x
-  nsim_hs5x_smp
-  nsim_hs6x
-  nsim_hs6x_smp
-  nsim_hs_flash_xip
-  nsim_hs_mpuv6
-  nsim_hs_smp
-  nsim_hs_sram
-  nsim_sem
+  
+  nsim_em  
+  nsim_em11d  
+  nsim_em7d_v22  
+  nsim_hs  
+  nsim_hs5x  
+  nsim_hs5x_smp  
+  nsim_hs6x  
+  nsim_hs6x_smp  
+  nsim_hs_flash_xip  
+  nsim_hs_mpuv6  
+  nsim_hs_smp  
+  nsim_hs_sram  
+  nsim_sem  
   nsim_sem_mpu_stack_guard
-  qemu_arc_em
-  qemu_arc_hs
-  qemu_arc_hs5x
-  qemu_arc_hs6x
+  
+  qemu_arc_em  
+  qemu_arc_hs  
+  qemu_arc_hs5x  
+  qemu_arc_hs6x  
   qemu_arc_hs_xip
-arm:
-  96b_aerocore2
-  96b_argonkey
-  96b_avenger96
-  96b_carbon
-  96b_carbon_nrf51
-  96b_meerkat96
-  96b_neonkey
-  96b_nitrogen
-  96b_stm32_sensor_mez
+  
+### arm:
+  96b_aerocore2  
+  96b_argonkey  
+  96b_avenger96  
+  96b_carbon  
+  96b_carbon_nrf51  
+  96b_meerkat96  
+  96b_neonkey  
+  96b_nitrogen  
+  96b_stm32_sensor_mez  
   96b_wistrio
-  actinius_icarus
-  actinius_icarus_bee
-  actinius_icarus_bee_ns
-  actinius_icarus_ns
-  actinius_icarus_som
-  actinius_icarus_som_dk
-  actinius_icarus_som_dk_ns
-  actinius_icarus_som_ns
-  adafruit_feather_m0_basic_proto
-  adafruit_feather_m0_lora
-  adafruit_feather_nrf52840
-  adafruit_feather_stm32f405
-  adafruit_itsybitsy_m4_express
-  adafruit_itsybitsy_nrf52840
-  adafruit_kb2040
-  adafruit_trinket_m0
-  arduino_due
-  arduino_giga_r1_m4
-  arduino_giga_r1_m7
-  arduino_mkrzero
-  arduino_nano_33_ble
-  arduino_nano_33_ble_sense
-  arduino_nano_33_iot
-  arduino_nicla_sense_me
-  arduino_portenta_h7_m4
-  arduino_portenta_h7_m7
-  arduino_zero
-  arty_a7_arm_designstart_m1
-  arty_a7_arm_designstart_m3
-  ast1030_evb
-  atsamc21n_xpro
-  atsamd20_xpro
-  atsamd21_xpro
-  atsame54_xpro
-  atsaml21_xpro
-  atsamr21_xpro
+  
+  actinius_icarus  
+  actinius_icarus_bee  
+  actinius_icarus_bee_ns  
+  actinius_icarus_ns  
+  actinius_icarus_som  
+  actinius_icarus_som_dk  
+  actinius_icarus_som_dk_ns  
+  actinius_icarus_som_ns  
+  adafruit_feather_m0_basic_proto  
+  adafruit_feather_m0_lora  
+  adafruit_feather_nrf52840  
+  adafruit_feather_stm32f405  
+  adafruit_itsybitsy_m4_express  
+  adafruit_itsybitsy_nrf52840  
+  adafruit_kb2040  
+  adafruit_trinket_m0  
+  arduino_due  
+  arduino_giga_r1_m4  
+  arduino_giga_r1_m7  
+  arduino_mkrzero  
+  arduino_nano_33_ble  
+  arduino_nano_33_ble_sense  
+  arduino_nano_33_iot  
+  arduino_nicla_sense_me  
+  arduino_portenta_h7_m4  
+  arduino_portenta_h7_m7  
+  arduino_zero  
+  arty_a7_arm_designstart_m1  
+  arty_a7_arm_designstart_m3  
+  ast1030_evb  
+  atsamc21n_xpro  
+  atsamd20_xpro  
+  atsamd21_xpro  
+  atsame54_xpro  
+  atsaml21_xpro  
+  atsamr21_xpro  
   atsamr34_xpro
-  b_g474e_dpow1
-  b_l072z_lrwan1
-  b_l4s5i_iot01a
-  b_u585i_iot02a
-  b_u585i_iot02a_ns
-  bbc_microbit
-  bbc_microbit_v2
-  bcm958401m2
-  bcm958402m2_m7
-  bl5340_dvk_cpuapp
-  bl5340_dvk_cpuapp_ns
-  bl5340_dvk_cpunet
-  bl652_dvk
-  bl653_dvk
-  bl654_dvk
-  bl654_sensor_board
-  bl654_usb
-  black_f407ve
-  black_f407zg_pro
-  blackpill_f401cc
-  blackpill_f401ce
-  blackpill_f411ce
-  blueclover_plt_demo_v2_nrf52832
-  bt510
+  
+  b_g474e_dpow1  
+  b_l072z_lrwan1  
+  b_l4s5i_iot01a  
+  b_u585i_iot02a  
+  b_u585i_iot02a_ns  
+  bbc_microbit  
+  bbc_microbit_v2  
+  bcm958401m2  
+  bcm958402m2_m7  
+  bl5340_dvk_cpuapp  
+  bl5340_dvk_cpuapp_ns  
+  bl5340_dvk_cpunet  
+  bl652_dvk  
+  bl653_dvk  
+  bl654_dvk4  
+  bl654_sensor_board  
+  bl654_usb  
+  black_f407ve  
+  black_f407zg_pro  
+  blackpill_f401cc  
+  blackpill_f401ce  
+  blackpill_f411ce  
+  blueclover_plt_demo_v2_nrf52832  
+  bt510  
   bt610
-  cc1352p1_launchxl
-  cc1352r1_launchxl
-  cc1352r_sensortag
-  cc26x2r1_launchxl
-  cc3220sf_launchxl
-  cc3235sf_launchxl
-  circuitdojo_feather_nrf9160
-  circuitdojo_feather_nrf9160_ns
-  colibri_imx7d_m4
-  contextualelectronics_abc
-  cy8ckit_062_ble_m0
-  cy8ckit_062_ble_m4
-  cy8ckit_062_wifi_bt_m0
-  cy8ckit_062_wifi_bt_m4
-  cy8cproto_062_4343w
+  
+  cc1352p1_launchxl  
+  cc1352r1_launchxl  
+  cc1352r_sensortag  
+  cc26x2r1_launchxl  
+  cc3220sf_launchxl  
+  cc3235sf_launchxl  
+  circuitdojo_feather_nrf9160  
+  circuitdojo_feather_nrf9160_ns  
+  colibri_imx7d_m4  
+  contextualelectronics_abc  
+  cy8ckit_062_ble_m0  
+  cy8ckit_062_ble_m4  
+  cy8ckit_062_wifi_bt_m0  
+  cy8ckit_062_wifi_bt_m4  
+  cy8cproto_062_4343w  
   cyclonev_socdk
-  da1469x_dk_pro
-  decawave_dwm1001_dev
-  degu_evk
-  disco_l475_iot1
-  dragino_lsn50
+  
+  da1469x_dk_pro  
+  decawave_dwm1001_dev  
+  degu_evk  
+  disco_l475_iot1  
+  dragino_lsn50  
   dragino_nbsn95
-  ebyte_e73_tbb_nrf52832
-  efm32gg_slwstk6121a
-  efm32gg_stk3701a
-  efm32hg_slstk3400a
-  efm32pg_stk3401a
-  efm32pg_stk3402a
-  efm32pg_stk3402a_jg
-  efm32wg_stk3800
-  efr32_radio_brd4104a
-  efr32_radio_brd4180a
-  efr32_radio_brd4250b
-  efr32_radio_brd4255a
-  efr32bg_sltb010a
+  
+  ebyte_e73_tbb_nrf52832  
+  efm32gg_slwstk6121a  
+  efm32gg_stk3701a  
+  efm32hg_slstk3400a  
+  efm32pg_stk3401a  
+  efm32pg_stk3402a  
+  efm32pg_stk3402a_jg  
+  efm32wg_stk3800  
+  efr32_radio_brd4104a  
+  efr32_radio_brd4180a  
+  efr32_radio_brd4250b  
+  efr32_radio_brd4255a  
+  efr32bg_sltb010a  
   efr32mg_sltb004a
-  faze
-  frdm_k22f
-  frdm_k64f
-  frdm_k82f
-  frdm_kl25z
-  frdm_kw41z
+  
+  faze  
+  frdm_k22f  
+  frdm_k64f  
+  frdm_k82f  
+  frdm_kl25z  
+  frdm_kw41z  
   fvp_baser_aemv8r_aarch32
-  gd32a503v_eval
+  
+  gd32a503v_eval  
   gd32e103v_eval
   gd32e507v_start
   gd32e507z_eval
@@ -491,7 +504,7 @@ arm:
   xiao_ble_sense
   xmc45_relax_kit
   zybo
-arm64:
+### arm64:
   bcm958402m2_a72
   fvp_base_revc_2xaemv8a
   fvp_base_revc_2xaemv8a_smp_ns
@@ -516,17 +529,21 @@ arm64:
   qemu_kvm_arm64
   xenvm
   xenvm_gicv3
-mips:
+
+### mips:
   qemu_malta
   qemu_malta_be
-nios2:
+  
+### nios2:
   altera_max10
   qemu_nios2
-posix:
+  
+### posix:
+
   native_posix
   native_posix_64
   nrf52_bsim
-riscv:
+### riscv:
   adp_xc7k_ae350
   beaglev_starlight_jh7100
   esp32c3_devkitm
@@ -558,11 +575,13 @@ riscv:
   stamp_c3
   tlsr9518adk80d
   xiao_esp32c3
-sparc:
+  
+### sparc:
   generic_leon3
   gr716a_mini
   qemu_leon3
-x86:
+  
+### x86:
   acrn
   acrn_ehl_crb
   ehl_crb
@@ -579,7 +598,8 @@ x86:
   qemu_x86_xip
   rpl_crb
   up_squared
-xtensa:
+  
+### xtensa:
   esp32
   esp32_ethernet_kit
   esp32_net
